@@ -26,3 +26,31 @@ export const navsList: NavInterface[] = [
         link: '#achievements'
     },
 ]
+
+interface JourneyInterface {
+    id:number;
+    title:string;
+    description:string;
+    image:string;
+}
+
+export const journeyList:JourneyInterface[] = [
+    {
+        id:1,
+        title:"Gym",
+        description:"",
+        image: '',
+    },
+    {
+        id:2,
+        title:"Yoga",
+        description:"",
+        image: '',
+    },
+    {
+        id:3,
+        title:"Martial Art",
+        description:"",
+        image: '',
+    },
+]
