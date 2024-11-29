@@ -1,13 +1,17 @@
-import './styles/globals.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import "./styles/globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata = {
-  title: 'My Landing Page',
-  description: 'Landing page built with Next.js and Tailwind',
+  title: "My Landing Page",
+  description: "Landing page built with Next.js and Tailwind",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
