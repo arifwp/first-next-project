@@ -1,9 +1,9 @@
 import { journeyList } from "../utils/constants";
-import JourneyCard from "./JourneyCard";
+import JourneyCard from "./cards/JourneyCard";
 
 export default function Journey() {
   return (
-    <section id="journey" className="w-full py-12 px-4">
+    <section id="journey" className="w-full p-12">
       <div className="w-full flex flex-col">
         <div className="w-full flex flex-col text-center sm:flex-row sm:text-left sm:space-x-12 sm:justify-between">
           <h1 className="text-4xl md:text-5ml font-semibold mb-4 flex-1 text-wrap">

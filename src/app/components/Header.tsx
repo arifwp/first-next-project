@@ -1,5 +1,5 @@
 import { navsList } from "../utils/constants";
-import NavLink from "./NavLink";
+import NavLink from "./navs/NavLink";
 
 const Header: React.FC = () => {
   return (
