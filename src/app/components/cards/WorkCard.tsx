@@ -19,8 +19,8 @@ export default function WorkCard({
     <div
       className={`p-8 rounded-md flex flex-col text-start ${
         isPrimary === 0
-          ? `bg-darkSecondary text-white z-0`
-          : `bg-greenPrimary text-black scale-110 z-10`
+          ? `bg-darkSecondary text-white md:z-0`
+          : `bg-greenPrimary text-black md:scale-110 md:z-10`
       } ${className}`}
     >
       <div className="relative w-24 h-24">

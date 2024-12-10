@@ -12,9 +12,9 @@ export default function Works() {
           yet effective
         </p>
 
-        <div className="w-full mt-16 flex flex-row">
+        <div className="w-full mt-16 flex flex-col md:flex-row gap-6 md:gap-0">
           <WorkCard
-            className="-translate-x-4"
+            className="md:-translate-x-4"
             icon={"/images/muscle.png"}
             title="Discover Your Plan"
             description=" Welcome to a fitness experience like no other-where your health and
@@ -31,7 +31,7 @@ export default function Works() {
           />
 
           <WorkCard
-            className="translate-x-4"
+            className="md:translate-x-4"
             icon={"/images/plant.png"}
             title="Discover Your Plan"
             description=" Welcome to a fitness experience like no other-where your health and
@@ -39,6 +39,10 @@ export default function Works() {
             isPrimary={0}
           />
         </div>
+
+        <button className="rounded-lg bg-white px-4 py-3 text-black mt-8 md:mt-16">
+          Explore Our Program
+        </button>
       </div>
     </section>
   );

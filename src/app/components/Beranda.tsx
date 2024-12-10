@@ -16,11 +16,11 @@ export default function Beranda() {
         </div>
 
         <div className="flex flex-col flex-1 my-auto">
-          <h1 className="text-5xl font-semibold text-white">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
             Transform Your Body, Elevate Your Strength
           </h1>
 
-          <p className="text-sm text-gray-300 text-justify mt-4">
+          <p className="text-xs md:text-sm text-gray-300 text-justify mt-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -33,7 +33,7 @@ export default function Beranda() {
             Explore Our Program
           </button>
 
-          <div className="w-full flex mt-8 space-x-12 justify-evenly md:justify-start">
+          <div className="w-full max-sm:grid flex max-sm:flex-col md:flex-row mt-8 max-sm:space-y-12 md:space-x-12 justify-evenly justify-items-center md:justify-start">
             <div className="w-fit flex flex-col text-center">
               <p className="text-2xl font-semibold">15+</p>
               <p className="text-sm font-thin">Certificated</p>
