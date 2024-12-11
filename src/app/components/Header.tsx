@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         ))}
       </nav>
 
-      <button className="text-xs h-[40px] px-4 py-1 rounded-md text-darkPrimary bg-greenPrimary hidden md:block">
+      <button className="text-xs px-4 py-1 rounded-md text-darkPrimary bg-greenPrimary hidden md:block">
         Custom Plan
       </button>
     </div>
