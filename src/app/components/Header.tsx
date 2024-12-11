@@ -8,11 +8,11 @@ const Header: React.FC = () => {
 
       <nav className="sm:space-x-8 md:space-x-16 my-auto hidden sm:block">
         {navsList.map((item) => (
-          <NavLink key={item.id} label={item.label} />
+          <NavLink key={item.id} item={item} />
         ))}
       </nav>
 
-      <button className="text-xs px-4 py-1 rounded-md text-darkPrimary bg-greenPrimary hidden sm:block">
+      <button className="text-xs h-[40px] px-4 py-1 rounded-md text-darkPrimary bg-greenPrimary hidden md:block">
         Custom Plan
       </button>
     </div>
