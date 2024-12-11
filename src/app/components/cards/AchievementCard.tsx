@@ -18,7 +18,7 @@ export default function AchievementCard({
   className = "",
 }: Props) {
   return (
-    <div className={`w-full relative snap-center ${className}`}>
+    <div className={`w-full relative ${className}`}>
       <div className="w-full px-8 pt-8 pb-14 rounded-md md:rounded-lg lg:rounded-xl bg-darkSecondary relative">
         <div className="w-full mt-14 text-center md:text-start md:mt-0 flex flex-col">
           <p className="text-white font-semibold text-lg md:text-xl">{name}</p>
@@ -70,7 +70,7 @@ export default function AchievementCard({
       </div>
 
       <div className="absolute -top-12 left-1/2 transfrom -translate-x-1/2 md:right-8 md:left-auto md:transform-none">
-        <div className="w-32 h-32">
+        <div className="relative w-32 h-32">
           <Image
             className="rounded-md md:rounded-lg"
             src={image}
