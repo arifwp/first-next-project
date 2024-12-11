@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SkillsView() {
   return (
-    <section id="skillsview" className="w-full p-12">
+    <section id="skills" className="w-full p-12">
       <div className="w-full flex flex-col md:flex-row md:space-x-12 max-md:space-y-12 md:items-center">
         <div className="w-full md:flex-1">
           <Image
