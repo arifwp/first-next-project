@@ -1,4 +1,4 @@
-interface NavInterface {
+export interface NavInterface {
   id: number;
   label: string;
   link: string;
@@ -120,5 +120,117 @@ export const achievementList: AchievementInterface[] = [
     rate: "4.8",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+  },
+];
+
+export interface FeatureListInterface {
+  id: number;
+  name: string;
+}
+
+export interface SubscriptionPlanInterface {
+  id: number;
+  name: string;
+  credit: string;
+  isPrimary: boolean;
+  featureList: FeatureListInterface[];
+}
+
+export const subscriptionsPlanData: SubscriptionPlanInterface[] = [
+  {
+    id: 1,
+    name: "Basic Plan",
+    credit: "Includes 100 Credits",
+    isPrimary: false,
+    featureList: [
+      {
+        id: 1,
+        name: "All Vision Nutrition Label Scanner",
+      },
+      {
+        id: 2,
+        name: "Automatic Macro Calculation",
+      },
+      {
+        id: 3,
+        name: "Nutrition Tracking",
+      },
+      {
+        id: 4,
+        name: "1x Free Suplement",
+      },
+      {
+        id: 5,
+        name: "3 Days per week",
+      },
+      {
+        id: 6,
+        name: "Personal Trainer",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Annual Plan",
+    credit: "Includes 1.200 Credits",
+    isPrimary: true,
+    featureList: [
+      {
+        id: 1,
+        name: "All Vision Nutrition Label Scanner",
+      },
+      {
+        id: 2,
+        name: "Automatic Macro Calculation",
+      },
+      {
+        id: 3,
+        name: "Nutrition Tracking",
+      },
+      {
+        id: 4,
+        name: "1x Free Suplement",
+      },
+      {
+        id: 5,
+        name: "3 Days per week",
+      },
+      {
+        id: 6,
+        name: "Personal Trainer",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Lifetime Plan",
+    credit: "Unlimited Credits",
+    isPrimary: false,
+    featureList: [
+      {
+        id: 1,
+        name: "All Vision Nutrition Label Scanner",
+      },
+      {
+        id: 2,
+        name: "Automatic Macro Calculation",
+      },
+      {
+        id: 3,
+        name: "Nutrition Tracking",
+      },
+      {
+        id: 4,
+        name: "1x Free Suplement",
+      },
+      {
+        id: 5,
+        name: "3 Days per week",
+      },
+      {
+        id: 6,
+        name: "Personal Trainer",
+      },
+    ],
   },
 ];
